@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+import { ToastContainer } from 'react-toastify';
+import axios from 'axios';
+
+import RightBar from './components/rightbar/RightBar';
+import LeftBar from './components/leftbar/LeftBar';
+import Update from './components/update/Update';
+import NavBar from './components/navbar/NavBar';
+
+import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
+
+axios.defaults.baseURL = 'http://localhost:9900/api/users';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavBar />
+      <ToastContainer />
+      <div className='container'>
+        <LeftBar />
+        <Update />
+        <RightBar />
+      </div>
+    </>
   );
-}
+};
 
 export default App;

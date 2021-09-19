@@ -1,10 +1,10 @@
 import { ToastContainer } from 'react-toastify';
 import axios from 'axios';
 
-import RightBar from './components/rightbar/RightBar';
-import LeftBar from './components/leftbar/LeftBar';
-import Update from './components/update/Update';
-import NavBar from './components/navbar/NavBar';
+import RightBar from 'components/rightbar/RightBar';
+import LeftBar from 'components/leftbar/LeftBar';
+import Update from 'components/update/Update';
+import NavBar from 'components/navbar/NavBar';
 
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';

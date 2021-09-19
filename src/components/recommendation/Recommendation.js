@@ -7,7 +7,7 @@ const Recommendation = ({ type }) => {
 
     const title =
         type === 'user'
-            ? `Recommended for ${user?.name}`
+            ? `Recommended for ${user.name}`
             : type === 'popular'
                 ? 'Popular on Redux App'
                 : `Editor's choice`;

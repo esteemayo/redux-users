@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { remove, updateUser2 } from '../../features/user';
-// import { updateUser } from '../../features/apiCalls';
+import { remove, updateUser2 } from 'features/user';
+// import { updateUser } from 'features/apiCalls';
 import Warning from '../warning/Warning';
 import './Update.css';
 

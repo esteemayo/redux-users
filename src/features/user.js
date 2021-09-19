@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
-import { editUser } from '../services/userService';
+import { editUser } from 'services/userService';
 
 export const updateUser2 = createAsyncThunk('users/update', async (user) => {
     const { data } = await editUser(user);

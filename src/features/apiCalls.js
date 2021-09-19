@@ -1,5 +1,5 @@
 import { updateError, updateStart, updateSuccess } from './user';
-import { editUser } from '../services/userService';
+import { editUser } from 'services/userService';
 
 export const updateUser = async (user, dispatch) => {
     dispatch(updateStart());
